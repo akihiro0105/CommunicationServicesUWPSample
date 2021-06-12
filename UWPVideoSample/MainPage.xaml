@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button x:Name="CallButton" Content="通話開始" Height="112" Margin="25,75,0,0" VerticalAlignment="Top" Width="212" Click="CallButton_ClickAsync"/>
+        <Button x:Name="HangupButton" Content="通話終了" Height="112" Margin="256,75,0,0" VerticalAlignment="Top" Width="212" Click="HangupButton_Click"/>
+        <TextBox x:Name="CallTextBox" Height="45" Margin="25,25,25,0" Text="8:echo123" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <MediaElement x:Name="LocalVideo" Height="400" VerticalAlignment="Top" HorizontalAlignment="Left" Width="720" Margin="25,192,0,0"/>
+        <MediaElement x:Name="RemoteVideo" Height="400" Margin="0,592,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="720"/>
     </Grid>
 </Page>

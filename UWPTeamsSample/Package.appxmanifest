@@ -45,5 +45,17 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="internetClientServer"/>
+    <DeviceCapability Name="microphone"/>
+    <DeviceCapability Name="webcam"/>
   </Capabilities>
+
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>RtmMvrUap.dll</Path>
+        <ActivatableClass ActivatableClassId="VideoN.VideoSchemeHandler" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
 </Package>
